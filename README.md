@@ -24,7 +24,9 @@ For more details, check out the [docs](https://statamic.com/marketplace/addons/l
 
 ```blade
 {{ logplus message="Just a simple debug message" }}
+```
 
+```blade
 {{ if slug == "secret-page" }}
   {{ user }}
     {{
@@ -37,6 +39,10 @@ For more details, check out the [docs](https://statamic.com/marketplace/addons/l
 ```
 
 #### Controller
+
+```js
+axios.post('/!/Logplus/log', { message: 'Just a simple debug message' })
+```
 
 ```js
 axios.post(someExternalEndpoint, {...})
