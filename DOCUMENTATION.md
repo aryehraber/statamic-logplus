@@ -15,13 +15,13 @@ csrf_exclude:
 
 By default, messages will be logged using the `debug` severity level:
 
-#### Tag
+### Tag
 
 ```blade
 {{ logplus message="My debug message" }}
 ```
 
-#### Controller
+### Controller
 
 ```js
 axios.post('/!/Logplus/log', { message: 'My debug message' })
@@ -37,7 +37,7 @@ _Log file output_
 
 To bump up the severity level, pass in the `level`:
 
-#### Tag
+### Tag
 
 Either use the `level` option, or use the shorthand syntax:
 
@@ -47,7 +47,7 @@ Either use the `level` option, or use the shorthand syntax:
 {{ logplus:error message="Something bad happened" }}
 ```
 
-#### Controller
+### Controller
 
 ```js
 axios.post('/!/Logplus/log', { level: 'error', message: 'Something bad happened' })
@@ -63,7 +63,7 @@ _Log file output_
 
 Add additional data by using the `context` option:
 
-#### Tag
+### Tag
 
 To pass an array of items, use a pipe-delimited list:
 
@@ -83,7 +83,7 @@ To pass multiple items to a single key, use multiple colons, everything after th
 {{ logplus message="My debug message" context="data:foo:bar:baz" }}
 ```
 
-#### Controller
+### Controller
 
 To pass an array of items, use an array:
 
