@@ -20,7 +20,7 @@ For more details, check out the [docs](https://statamic.com/marketplace/addons/l
 
 ## Examples
 
-#### Tag
+### Tag
 
 ```blade
 {{ logplus message="Just a simple debug message" }}
@@ -38,7 +38,7 @@ For more details, check out the [docs](https://statamic.com/marketplace/addons/l
 {{ /if }}
 ```
 
-#### Controller
+### Controller
 
 ```js
 axios.post('/!/Logplus/log', { message: 'Just a simple debug message' })
